@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  background-color: black;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +20,194 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.sidebar {
+  transition: width 0.5s;
+  z-index: 100;
+  border-right: 1px solid white;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  z-index: 100;
+}
+
+.container {
+  border-left: 1px solid white;
+  border-right:1px solid white;
+  min-height: 100vh;
+}
+
+#root,{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+#mmRadioPlayer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1em;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffd078;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  color: white;
+}
+
+div.contact, div.about, div.schedule, div.upcoming {
+  text-align: center;
+}
+
+#mmRadioPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background:black;
+  padding:0px;
+  margin:0px;
+}
+
+#mmRadioPlayer iframe {
+}
+
+
+#mmRadioPlayerNowPlaying {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  width:auto;
+}
+
+#mmRadioPlayerNowPlaying div {
+  /* background:white; */
+  color:white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width:100%;
+  text-align: center;
+}
+
+
+.hamburger {
+  fill: white;
+  stroke: white;
+  position: absolute;
+  right: 0;
+  top: 1.2em;
+  transform: rotate(0deg);
+  rotate: 0deg;
+  transition: transform 0.5s rotate 0.5s;
+}
+
+.rotate-right {
+  rotate: 90deg;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.plex-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.plex-serif {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.plex-serif-light {
+  font-family: 'IBM Plex Serif Light', serif;
+}
+
+.plex-serif-bold {
+  font-family: 'IBM Plex Serif Bold', serif;
+}
+
+.plex-serif-italic {
+  font-family: 'IBM Plex Serif Italic', serif;
+}
+
+.plex-serif-bold-italic {
+  font-family: 'IBM Plex Serif Bold Italic', serif;
+}
+
+.plex-serif-black {
+  font-family: 'IBM Plex Serif Black', serif;
+}
+
+.plex-mono-light {
+  font-family: 'IBM Plex Mono Light', monospace;
+}
+
+.plex-mono-bold {
+  font-family: 'IBM Plex Mono Bold', monospace;
+}
+
+.plex-mono-italic {
+  font-family: 'IBM Plex Mono Italic', monospace;
+}
+
+.plex-mono-bold-italic {
+  font-family: 'IBM Plex Mono Bold Italic', monospace;
+}
+
+.plex-mono-black {
+  font-family: 'IBM Plex Mono Black', monospace;
+}
+
+.plex-sans {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.plex-sans-light {
+  font-family: 'IBM Plex Sans Light', sans-serif;
+}
+
+.plex-sans-bold {
+  font-family: 'IBM Plex Sans Bold', sans-serif;
+}
+
+.plex-sans-italic {
+  font-family: 'IBM Plex Sans Italic', sans-serif;
+}
+
+.plex-sans-bold-italic {
+  font-family: 'IBM Plex Sans Bold Italic', sans-serif;
 }
