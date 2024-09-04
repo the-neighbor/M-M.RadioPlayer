@@ -90,12 +90,16 @@ div.contact, div.about, div.schedule, div.upcoming {
   text-align: center;
 }
 
+.container {
+  background-color: rgba(0, 0, 0, 0.488);
+}
+
 #mmRadioPlayer {
   display: flex;
   align-items: center;
   justify-content: start;
   width: 100%;
-  background:black;
+  background:rgba(0, 0, 0, 0);
   padding:0px;
   margin:0px;
 }
